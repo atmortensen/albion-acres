@@ -1,18 +1,21 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
+import { NavLink, withRouter } from 'react-router-dom'
 
 const Wrapper = styled.div`
 
 `
 const Link = styled(NavLink).attrs({
+  activeClassName: 'active'
 })`
   color: green;
-  
+  &.active {
+    color: blue;
+  }
 `
 
-export default class Menu extends Component {
+class Menu extends Component {
 	constructor() {
 		super()
 		this.state={
@@ -32,18 +35,18 @@ export default class Menu extends Component {
   render() {
     return (
       <Wrapper>
-        <NavLink activeClassName="active" exact to="/">Home</NavLink>
-        <NavLink activeClassName="active" to="/goldens">Goldens</NavLink>
-        <NavLink activeClassName="active" to="/boers">Boers</NavLink>
-        <NavLink activeClassName="active" to="/contact">Contact</NavLink>
+        <Link exact to="/">Home</Link>
+        <Link to="/goldens">Goldens</Link>
+        <Link to="/boers">Boers</Link>
+        <Link to="/contact">Contact</Link>
         { this.props.children }
 	    </Wrapper>
     )
   }
 }
 
-// export default connect(state => ({
-// 	// Map state to props.
-// }), {
-// 	// Map dispatch to props.
-// })(Menu)
+export default withRouter(connect(state => ({
+	// Map state to props.
+}), {
+	// Map dispatch to props.
+})(Menu))
