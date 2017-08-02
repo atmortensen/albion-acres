@@ -5,9 +5,13 @@ import * as globalStyles from '../globalStyles'
 
 const Wrapper = styled.div`
   width: 100%;
+  padding-top: 63px;
 `
 
 const MenuBar = styled.div`
+  max-height: 63px;
+  position: fixed;
+  top: 0;
   width: 100%;
   background: ${globalStyles.mainColor};
   display: flex;
