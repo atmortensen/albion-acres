@@ -1,39 +1,18 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 import styled from 'styled-components'
+import * as globalStyles from '../globalStyles'
+import CoverImage from '../components/CoverImage'
+import jumpingBoer from '../images/jumping_boer.jpg'
 
-const Wrapper = styled.div`
-
-`
-
-class Boers extends Component {
-	constructor() {
-		super()
-		this.state={
-
-		}
-	}
-
-	componentDidMount() {
-
-	}
-
-	// Input handle function
-	handleChange(field, event) {
-		this.setState({ [ field ]: event.target.value })
-	}
-
+export default class Goldens extends Component {
   render() {
     return (
-    	<Wrapper>
-        BOERS
-	    </Wrapper>
+      <div>
+        <CoverImage
+          mainText="Spotted Boer Goats" 
+          subText="Show Quality English Cream Golden Retrievers and Spotted Boer Goats"
+          image={jumpingBoer} />
+      </div>
     )
   }
 }
-
-export default connect(state => ({
-	// Map state to props.
-}), {
-	// Map dispatch to props.
-})(Boers)

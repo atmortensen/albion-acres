@@ -58,7 +58,8 @@
         "func-names": "error",
         "func-style": [
             "error",
-            "declaration"
+            "declaration",
+             { "allowArrowFunctions": true }
         ],
         "generator-star-spacing": "error",
         "global-require": "error",
@@ -219,7 +220,8 @@
         "quote-props": "off",
         "quotes": [
             "error",
-            "single"
+            "single",
+            { "allowTemplateLiterals": true }
         ],
         "radix": "error",
         "react/prop-types": "off",

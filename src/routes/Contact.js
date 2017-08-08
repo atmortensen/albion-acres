@@ -1,39 +1,18 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 import styled from 'styled-components'
+import * as globalStyles from '../globalStyles'
+import CoverImage from '../components/CoverImage'
+import onTheMountain from '../images/on_the_mountain.jpg'
 
-const Wrapper = styled.div`
-
-`
-
-class Contact extends Component {
-	constructor() {
-		super()
-		this.state={
-
-		}
-	}
-
-	componentDidMount() {
-
-	}
-
-	// Input handle function
-	handleChange(field, event) {
-		this.setState({ [ field ]: event.target.value })
-	}
-
+export default class Goldens extends Component {
   render() {
     return (
-    	<Wrapper>
-        CONTACT
-	    </Wrapper>
+      <div>
+        <CoverImage
+          mainText="Get In Touch" 
+          subText="Contact us for information about available English Cream puppies and Boer Goats"
+          image={onTheMountain} />
+      </div>
     )
   }
 }
-
-export default connect(state => ({
-	// Map state to props.
-}), {
-	// Map dispatch to props.
-})(Contact)

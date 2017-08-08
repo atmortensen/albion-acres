@@ -1,17 +1,14 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import * as globalStyles from '../globalStyles'
-import dogsOnHardwood from '../images/dogs_on_hardwood.jpg'
-import clyde from '../images/clyde.jpg'
-
-// Add a 100px wrapper component for menu items and video
-// Make video show image until clicked
+import CoverImage from '../components/CoverImage'
+import goldensOnHay from '../images/goldens_on_hay.jpg'
 
 const vidWrapHeight = 80
 const VideoWrapper = styled.div`
   width: 100%;
   height: ${vidWrapHeight}vh;
-  // background: #fff;
+  background: #ccc;
   // margin-top: 25px;
 `
 
@@ -23,7 +20,7 @@ const Video = styled.iframe`
 `
 
 const Header = styled.h2`
-  background: #fff;
+  // background: #fff;
   width: 100%;
   margin: 0;
   height: 300px;
@@ -34,9 +31,13 @@ export default class Home extends Component {
   render() {
     return (
       <div>
+        <CoverImage
+          mainText="Albion Acres" 
+          subText="Show Quality English Cream Golden Retrievers and Spotted Boer Goats"
+          image={goldensOnHay} />
         <VideoWrapper>
           <Video 
-            src="https://www.youtube.com/embed/aSYoGah1kN8?autoplay=1&rel=0" 
+            src="https://www.youtube.com/embed/aSYoGah1kN8?autoplay=10&rel=0" 
             frameBorder="0">
           </Video>
         </VideoWrapper>
