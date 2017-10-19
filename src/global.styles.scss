@@ -1,0 +1,16 @@
+$main: #969F85;
+$menu-height: 65px;
+
+* {
+  font-family: 'Roboto Slab', serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: url('./images/bg.png');
+  min-height: 100vh;
+  border-bottom: 8px solid $main;
+}
+
+
