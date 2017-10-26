@@ -7,8 +7,8 @@ export default class Goldens extends Component {
 		return (
 			<div className="goldens-component">
 				<CoverImage
-					mainText="English Cream Golden Retrievers" 
-					subText="Show Quality English Cream Golden Retrievers and Spotted Boer Goats"
+					mainText="Golden Retrievers" 
+					subText="English Cream Goldens are known for their Relaxed and Friendly Temperaments"
 					image={puppyInABush} />
 			</div>
 		)

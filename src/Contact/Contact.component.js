@@ -8,7 +8,7 @@ export default class Goldens extends Component {
 			<div>
 				<CoverImage
 					mainText="Get In Touch" 
-					subText="Contact us for information about available English Cream puppies and Boer Goats"
+					subText="Contact us for more information about available Goldens and Boer Goats"
 					image={onTheMountain} />
 			</div>
 		)

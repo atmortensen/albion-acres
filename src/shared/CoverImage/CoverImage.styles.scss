@@ -4,25 +4,36 @@
 .cover-image-component {
 	height: calc(100vh - #{$menu-height});
 	border-bottom: 8px solid $main;
-	position: relative;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding: 10px 20px;
+	@media (max-width: 800px) {
+		align-items: center;
+		padding: 10px 5px;
+	}
 
 	.main-text {
 		margin: 0;
-		position: absolute;
-		right: 20px;
-		bottom: 40px;
-		color: #FFF;
-		font-size: 60px;
+		font-size: 55px;
+		@media (max-width: 800px) {
+			font-size: 40px;
+			line-height: 120%;
+			text-align: center;
+		}
 	}
 
 	.sub-text {
 		margin: 0;
-		position: absolute;
-		right: 20px;
-		bottom: 10px;
-		color: #FFF;
 		font-weight: normal;
 		font-size: 30px;
+		@media (max-width: 800px) {
+			text-align: center;
+			font-size: 18px;
+			padding: 10px 0;
+		}
 	}
 
 }
