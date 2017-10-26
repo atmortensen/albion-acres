@@ -5,13 +5,30 @@
 	padding-top: $menu-height;
 
 	.menu-bar{
-		height: $menu-height;
+		min-height: $menu-height;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		background: $main;
 		box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.5);
 		z-index: 99;
+	}
+
+	.hamburger {
+		width: 35px;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		cursor: pointer;
+		.bar {
+			width: 100%;
+			height: 5px;
+			margin: 5px 0;
+			background: #fff;
+		}
+		@media (min-width: 800px) {
+			display: none;
+		}
 	}
 
 	.logo {
@@ -27,7 +44,17 @@
 		display: flex;
 		float: right;
 		@media (max-width: 800px) {
-			display: none;
+			overflow: hidden;
+			max-height: 0;
+			display: block;
+			width: 100%;
+			transition: max-height .35s;
+			&.dropped {
+				max-height: 100vh;
+			}
+			&.hidden {
+				display: none;
+			}
 		}
 	}
 
