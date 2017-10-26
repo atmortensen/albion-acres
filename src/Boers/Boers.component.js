@@ -5,7 +5,7 @@ import jumpingBoer from '../images/jumping_boer.jpg'
 export default class Goldens extends Component {
 	render() {
 		return (
-			<div>
+			<div className="boers-component">
 				<CoverImage
 					mainText="Spotted Boers" 
 					subText="ABGA Full Blood Registered Spotted Boer Goats"

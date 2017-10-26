@@ -12,15 +12,15 @@ export default class Routes extends Component {
 	render() {
 		return (
 			<BrowserRouter>
-					<Menu>
-						<Switch>
-							<Route exact path="/" component={Home} />
-							<Route exact path="/goldens" component={Goldens} />
-							<Route exact path="/boers" component={Boers} />
-							<Route exact path="/contact" component={Contact} />
-							<Route component={NotFound} />
-						</Switch>
-					</Menu>
+				<Menu>
+					<Switch>
+						<Route exact path="/" component={Home} />
+						<Route exact path="/goldens" component={Goldens} />
+						<Route exact path="/boers" component={Boers} />
+						<Route exact path="/contact" component={Contact} />
+						<Route component={NotFound} />
+					</Switch>
+				</Menu>
 			</BrowserRouter>
 		)
 	} 
