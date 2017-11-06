@@ -45,12 +45,16 @@
 		float: right;
 		@media (max-width: 800px) {
 			overflow: hidden;
-			max-height: 0;
+			height: 0;
 			display: block;
 			width: 100%;
-			transition: max-height .35s;
+			transition: height .35s;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			&.dropped {
-				max-height: 100vh;
+				height: calc(100vh - #{$menu-height});
 			}
 			&.hidden {
 				display: none;
@@ -65,9 +69,6 @@
 		padding: 15px;
 		font-size: 25px;
 		font-weight: 200;
-		@media (max-width: 800px) { 
-			font-size: 20px;
-		}
 		&.active {
 			color: #333;
 		}

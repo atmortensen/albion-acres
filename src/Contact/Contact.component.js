@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import CoverImage from '../shared/CoverImage/CoverImage.component'
-import onTheMountain from '../images/on_the_mountain.jpg'
 
 export default class Goldens extends Component {
 	render() {
@@ -9,7 +8,7 @@ export default class Goldens extends Component {
 				<CoverImage
 					mainText="Get In Touch" 
 					subText="Contact us for more information about available Goldens and Boer Goats"
-					image={onTheMountain} />
+					image="https://storage.googleapis.com/albion-acres-2017/cover-images/on_the_mountain.jpg" />
 			</div>
 		)
 	}

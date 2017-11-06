@@ -2,23 +2,40 @@
 
 
 .gallery-component {
-	width: 800px;
+	width: 100%;
 	margin: auto;
 	@media (max-width: 800px) {
 		width: 100%;
 	}
 
 	.main-image {
-		height: 400px;
+		height: 600px;
 		background: #000;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		position: relative;
 		img {
 			display: block;
 		}
 		@media (max-width: 800px) {
 			height: 300px;
+		}
+		i {
+			position: absolute;
+			color: #fff;
+			text-shadow: 0 0 3px rgba(0, 0, 0, .75);
+			font-size: 100px;
+			cursor: pointer;
+			@media (max-width: 800px) {
+				font-size: 50px;
+			}
+		}
+		.arrow-left {
+			left: 5px;
+		}
+		.arrow-right {
+			right: 5px;
 		}
 	}
 

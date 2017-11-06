@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import CoverImage from '../shared/CoverImage/CoverImage.component'
-import jumpingBoer from '../images/jumping_boer.jpg'
+import Wrapper from '../shared/Wrapper/Wrapper.component'
 
 export default class Goldens extends Component {
 	render() {
@@ -9,7 +9,11 @@ export default class Goldens extends Component {
 				<CoverImage
 					mainText="Spotted Boers" 
 					subText="ABGA Full Blood Registered Spotted Boer Goats"
-					image={jumpingBoer} />
+					image="https://storage.googleapis.com/albion-acres-2017/cover-images/jumping_boer.jpg" />
+				<Wrapper>
+					<h1>Coming Soon.</h1>
+					<h2>Please contact Troy at 208.869.2141 for more information.</h2>
+				</Wrapper>
 			</div>
 		)
 	}

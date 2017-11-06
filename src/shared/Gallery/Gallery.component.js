@@ -5,29 +5,34 @@ export default class Gallery extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			selected: props.images[0]
+			selected: 0
 		}
 	}
 
-	changeSelected(image) {
-		this.setState({ selected: image })
+	right() {
+		if (this.props.images[this.state.selected + 1]) {
+			this.setState({ selected: ++this.state.selected })
+		} else {
+			this.setState({ selected: 0 })
+		}
+	}
+
+	left() {
+		if (this.props.images[this.state.selected - 1]) {
+			this.setState({ selected: --this.state.selected })
+		} else {
+			this.setState({ selected: this.props.images.length - 1 })
+		}
 	}
 	
 	render() {
+		const image = this.props.images[this.state.selected]
 		return (
 			<div className="gallery-component">
 				<div className="main-image">
-					<img src={this.state.selected.image} alt={this.state.selected.alt} />
-				</div>
-
-				<div className="thumbnails">
-					{this.props.images.map((image, i) => {
-						return (
-							<div className="thumbnail" key={i} onClick={this.changeSelected.bind(this, image)}>
-								<img src={image.image} alt={image.alt} />
-							</div>
-						)
-					})}
+					<img src={image.image} alt={image.alt} />
+					<i className="fa fa-chevron-right arrow-right" onClick={this.right.bind(this)}></i>
+					<i className="fa fa-chevron-left arrow-left" onClick={this.left.bind(this)}></i>
 				</div>
 			</div>
 		)
