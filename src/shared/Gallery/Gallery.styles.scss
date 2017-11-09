@@ -2,14 +2,10 @@
 
 
 .gallery-component {
-	width: 800px;
+	width: 100%;
 	margin: 10px auto;
-	@media (max-width: 800px) {
-		width: 100%;
-	}
-
 	.main-image {
-		height: 600px;
+		height: 500px;
 		background: #000;
 		display: flex;
 		align-items: center;
