@@ -5,11 +5,16 @@ export default class Gallery extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			selected: 0
+			selected: 0,
+			loading: false
 		}
 	}
 
 	right() {
+		if (this.state.loading) {
+			return
+		}
+		this.setState({ loading: true })
 		if (this.props.images[this.state.selected + 1]) {
 			this.setState({ selected: ++this.state.selected })
 		} else {
@@ -18,6 +23,10 @@ export default class Gallery extends Component {
 	}
 
 	left() {
+		if (this.state.loading) {
+			return
+		}
+		this.setState({ loading: true })
 		if (this.props.images[this.state.selected - 1]) {
 			this.setState({ selected: --this.state.selected })
 		} else {
@@ -30,7 +39,7 @@ export default class Gallery extends Component {
 		return (
 			<div className="gallery-component">
 				<div className="main-image">
-					<img src={image.image} alt={image.alt} />
+					<img src={image.image} alt={image.alt} onLoad={() => this.setState({ loading: false })} />
 					<i className="fa fa-chevron-right arrow-right" onClick={this.right.bind(this)}></i>
 					<i className="fa fa-chevron-left arrow-left" onClick={this.left.bind(this)}></i>
 				</div>
