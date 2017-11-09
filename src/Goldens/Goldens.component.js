@@ -24,6 +24,34 @@ export default class Goldens extends Component {
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/clyde/20170611_201847.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/clyde/20170617_162505.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/clyde/20170619_075057.jpg' }
+			],
+			stellaShow: [
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/stella/OneDog_BarnBG-001.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/stella/20160326_072333.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/stella/20160327_152551(0).jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/stella/20160528_073415.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/stella/20170611_130136.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/stella/20170611_132831.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/stella/20171022_123415.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/stella/image2.jpg' }
+			],
+			willowShow: [
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/willow/20170611_132616.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/willow/20160327_151938.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/willow/20160327_152207.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/willow/20160424_202403.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/willow/20170511_164428(0).jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/willow/20171009_165934.jpg' }
+			],
+			jerseyShow: [
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/jersey/20160802_184717.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/jersey/20160519_100136.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/jersey/20160926_085423.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/jersey/20161025_093509.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/jersey/20170423_143925.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/jersey/20170915_200049.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/jersey/20170930_114701.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/jersey/IMG_20160826_202534.jpg' }
 			]
 		}
 	}
@@ -59,8 +87,8 @@ export default class Goldens extends Component {
 
 						<ul>
 							<li>Pennhip # 110396 Rated within central 90% for this breed</li>
-							<li>OFA Thyroid # GR-TH3346/15M/VPI  Normal</li>
-							<li>OFA Heart # GR-CA32083/16M/C-PI Normal</li>
+							<li>OFA Thyroid # GR-TH3346/15M - VPI  Normal</li>
+							<li>OFA Heart # GR-CA32083/16M/C - PI Normal</li>
 							<li>OFA Eyes # Normal</li>
 							<li>Ichthyosis - Clear</li>
 						</ul>
@@ -71,7 +99,7 @@ export default class Goldens extends Component {
 					</div>
 
 					{/* WILLOW */}
-					<Gallery images={this.state.clydeShow} />
+					<Gallery images={this.state.willowShow} />
 					<div className="card">
 						<p><strong>Willow</strong> | Female | Born 01.30.2016 | 70 lbs</p>
 
@@ -79,8 +107,8 @@ export default class Goldens extends Component {
 
 						<ul>
 							<li>Pennhip # 109487 Rated within central 90% for this breed</li>
-							<li>OFA Thyroid # GR-TH3345/17F-VPI  Normal</li>
-							<li>OFA Heart # GR-CA32082/17F/C-PI Normal</li>
+							<li>OFA Thyroid # GR-TH3345/17F - VPI  Normal</li>
+							<li>OFA Heart # GR-CA32082/17F/C - PI Normal</li>
 							<li>OFA Eyes # Normal</li>
 							<li>Ichthyosis - Carrier</li>
 						</ul>
@@ -91,7 +119,7 @@ export default class Goldens extends Component {
 					</div>
 
 					{/* STELLA */}
-					<Gallery images={this.state.clydeShow} />
+					<Gallery images={this.state.stellaShow} />
 					<div className="card">
 						<p><strong>Stella</strong> | Female | Born 12.30.2015 | 75 lbs</p>
 
@@ -99,10 +127,10 @@ export default class Goldens extends Component {
 
 						<ul>
 							<li>Pennhip # 109488 Rated within central 90% for this breed</li>
-							<li>OFA Thyroid # GR-TH3344/18F-VPI  Normal</li>
+							<li>OFA Thyroid # GR-TH3344/18F - VPI  Normal</li>
 							<li>OFA Heart # Pending</li>
 							<li>OFA Eyes # Pending</li>
-							<li>Ichthyosis- Carrier</li>
+							<li>Ichthyosis - Carrier</li>
 						</ul>
 
 						<p>
@@ -111,7 +139,7 @@ export default class Goldens extends Component {
 					</div>
 
 					{/* JERSEY */}
-					<Gallery images={this.state.clydeShow} />
+					<Gallery images={this.state.jerseyShow} />
 					<div className="card">
 						<p><strong>Jersey</strong> | Female | Born 02.23.2016 | 60 lbs</p>
 
@@ -119,10 +147,10 @@ export default class Goldens extends Component {
 
 						<ul>
 							<li>OFA Prelim # Good</li>
-							<li>OFA Thyroid # GR-TH3330/15F-VPI  Normal</li>
-							<li>OFA Heart # GR-CA31995/15F/P-VPI Normal</li>
+							<li>OFA Thyroid # GR-TH3330/15F - VPI  Normal</li>
+							<li>OFA Heart # GR-CA31995/15F/P - VPI Normal</li>
 							<li>OFA Eyes # Pending</li>
-							<li>Ichthyosis- Clear</li>
+							<li>Ichthyosis - Clear</li>
 						</ul>
 
 						<p>
