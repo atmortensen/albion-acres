@@ -36,11 +36,11 @@ export default class Goldens extends Component {
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/stella/image2.jpg' }
 			],
 			willowShow: [
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/willow/20170511_164428(0).jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/willow/20170611_132616.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/willow/20160327_151938.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/willow/20160327_152207.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/willow/20160424_202403.jpg' },
-				{ image: 'https://storage.googleapis.com/albion-acres-2017/willow/20170511_164428(0).jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/willow/20171009_165934.jpg' }
 			],
 			jerseyShow: [
@@ -81,7 +81,7 @@ export default class Goldens extends Component {
 					{/* CLYDE */}
 					<Gallery images={this.state.clydeShow} />
 					<div className="card">
-						<p><strong>Clyde</strong> | Male | Born 03.11.2016 | 85 lbs</p>
+						<p><strong>Clyde</strong> | Male | Born 03.11.2016 | 90 lbs</p>
 
 						<p>Clyde's nickname is "Baby Clyde" because he is such a sweet boy and tender teddy bear.  Personality and demeanor are most important to look for in selecting a pet, and Clyde wins the contest.  Clyde has that strong block English Cream head with those droop jowls.  He has a beautiful dense white creamy coat and thick muscular body. Clyde comes from very famous Champions in Europe and Scandinavia.  His bloodline has strong kennel names looked for in breeding dogs.</p>
 
@@ -94,7 +94,7 @@ export default class Goldens extends Component {
 						</ul>
 
 						<p>
-							<a target="_blank" href="https://storage.googleapis.com/albion-acres-2017/pedigree/Clyde%20AKC%20Pedigree.pdf">AKC Pedigree</a>
+							<a target="_blank" href="https://storage.googleapis.com/albion-acres-2017/pedigree/clyde.pdf">AKC Pedigree</a>
 						</p>
 					</div>
 
@@ -114,7 +114,7 @@ export default class Goldens extends Component {
 						</ul>
 
 						<p>
-							<a target="_blank" href="https://storage.googleapis.com/albion-acres-2017/pedigree/Willow%20AKC%20Pedigree.pdf">AKC Pedigree</a>
+							<a target="_blank" href="https://storage.googleapis.com/albion-acres-2017/pedigree/willow.pdf">AKC Pedigree</a>
 						</p>
 					</div>
 
@@ -134,7 +134,7 @@ export default class Goldens extends Component {
 						</ul>
 
 						<p>
-							<a target="_blank" href="https://storage.googleapis.com/albion-acres-2017/pedigree/Stella%20AKC%20Pedigree.pdf">AKC Pedigree</a>
+							<a target="_blank" href="https://storage.googleapis.com/albion-acres-2017/pedigree/stella.pdf">AKC Pedigree</a>
 						</p>
 					</div>
 

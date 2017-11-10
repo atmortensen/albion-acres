@@ -1,13 +1,9 @@
 @import '../global.styles.scss';
 
 
-.home-component {
-	h3 {
-		margin: 10px 0;
-	}
-	video {
-		margin: 10px auto;
-		display: block;
+.contact-component {
+	text-align: center;
+	img {
 		width: 100%;
 	}
 	.card {

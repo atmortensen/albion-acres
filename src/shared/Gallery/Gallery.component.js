@@ -39,7 +39,9 @@ export default class Gallery extends Component {
 		return (
 			<div className="gallery-component">
 				<div className="main-image">
-					<img src={image.image} alt={image.alt} onLoad={() => this.setState({ loading: false })} />
+					<img src={image.image} 
+						alt={image.alt || 'Idaho English Cream White Golden Retrievers'} 
+						onLoad={() => this.setState({ loading: false })} />
 					<i className="fa fa-chevron-right arrow-right" onClick={this.right.bind(this)}></i>
 					<i className="fa fa-chevron-left arrow-left" onClick={this.left.bind(this)}></i>
 				</div>

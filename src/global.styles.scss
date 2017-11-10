@@ -16,8 +16,10 @@ body {
 img {
   max-width: 100%;
   max-height: 100%;
+  image-orientation: from-image;
 }
 
 p {
   margin: 10px 0;
+  font-size: 16px;
 }
