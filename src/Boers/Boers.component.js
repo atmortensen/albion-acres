@@ -12,7 +12,7 @@ export default class Goldens extends Component {
 					image="https://storage.googleapis.com/albion-acres-2017/cover-images/jumping_boer.jpg" />
 				<Wrapper>
 					<h1>Coming Soon.</h1>
-					<h2>Please contact Troy at 208.869.2141 for more information.</h2>
+					<h2>Please contact Troy at <a href="tel:+12088692141">208.869.2141</a> for more information.</h2>
 
 					<video controls poster="https://storage.googleapis.com/albion-acres-2017/videos/goats.jpeg">
 						<source src="https://storage.googleapis.com/albion-acres-2017/videos/goats.mp4" type="video/mp4" />

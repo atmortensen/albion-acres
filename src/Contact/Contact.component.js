@@ -13,7 +13,7 @@ export default class Goldens extends Component {
 				<Wrapper>
 					<div className="card">
 						<p>Want to know more about making an English Cream a part of your family? Contact us with any questions or to find out when we will have puppies available.</p>
-						<p>Call or text Heather at 208.312.8484 or email hmmortensen@gmail.com.</p>
+						<p>Call or text Heather at <a href="tel:+12083128484">208.312.8484</a> or email <a href="mailto:hmmortensen@gmail.com">hmmortensen@gmail.com</a>.</p>
 					</div>
 					<p>
 						<img src="https://storage.googleapis.com/albion-acres-2017/clyde/20160508_134558.jpg" alt="Idaho English Cream White Golden Retrievers" />
