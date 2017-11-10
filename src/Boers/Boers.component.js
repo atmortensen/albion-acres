@@ -13,6 +13,11 @@ export default class Goldens extends Component {
 				<Wrapper>
 					<h1>Coming Soon.</h1>
 					<h2>Please contact Troy at 208.869.2141 for more information.</h2>
+
+					<video controls poster="https://storage.googleapis.com/albion-acres-2017/videos/goats.jpeg">
+						<source src="https://storage.googleapis.com/albion-acres-2017/videos/goats.mp4" type="video/mp4" />
+						Your browser does not support the video tag.
+					</video>
 				</Wrapper>
 			</div>
 		)
