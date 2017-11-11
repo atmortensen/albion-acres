@@ -12,18 +12,22 @@ export default class Home extends Component {
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/Mortensen-3.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/Mortensen-37.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/Dogs_BarnBG.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20161212_172838.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/EnglishRetrieve_SageBrilliant.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20160326_072740.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20160326_080943(0).jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20160503_074931.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20160523_154614(0).jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20161219_202844.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20160525_215647.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20160630_072219.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20160707_082611.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20171016_180858-001.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20160719_152021.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20160831_172226.jpg' },
 				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20160909_143920.jpg' },
-				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20161119_191138.jpg' }
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20161119_191138.jpg' },
+				{ image: 'https://storage.googleapis.com/albion-acres-2017/home_slideshow/20171016_180914.jpg' }
 			]
 		}
 	}

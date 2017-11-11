@@ -12,7 +12,7 @@ export default class Goldens extends Component {
 					image="https://storage.googleapis.com/albion-acres-2017/cover-images/on_the_mountain.jpg" />
 				<Wrapper>
 					<div className="card">
-						<p>Want to know more about making an English Cream a part of your family? Contact us with any questions or to find out when we will have puppies available.</p>
+						<p>Are you considering an English Cream for your family? Contact us for information on available puppies or with any other questions.</p>
 						<p>Call or text Heather at <a href="tel:+12083128484">208.312.8484</a> or email <a href="mailto:hmmortensen@yahoo.com">hmmortensen@yahoo.com</a>.</p>
 					</div>
 					<p>
