@@ -24,7 +24,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "concurrently \"gulp\" \"react-scripts start\"",
-    "build": "gulp styles && react-scripts build",
+    "build": "gulp styles && react-scripts build && move _redirects ./build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
