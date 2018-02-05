@@ -89,7 +89,7 @@ export default class Goldens extends Component {
 							<li>Pennhip # 110396 Rated within central 90% for this breed</li>
 							<li>OFA Thyroid # GR-TH3346/15M - VPI  Normal</li>
 							<li>OFA Heart # GR-CA32083/16M/C - PI Normal</li>
-							<li>OFA Eyes # Normal</li>
+							<li>OFA Eyes # GR-EYE14070/16M-PI</li>
 							<li>Ichthyosis - Clear</li>
 						</ul>
 
@@ -109,7 +109,7 @@ export default class Goldens extends Component {
 							<li>Pennhip # 109487 Rated within central 90% for this breed</li>
 							<li>OFA Thyroid # GR-TH3345/17F - VPI  Normal</li>
 							<li>OFA Heart # GR-CA32082/17F/C - PI Normal</li>
-							<li>OFA Eyes # Normal</li>
+							<li>OFA Eyes # GR-EYE14071/17F-VPI</li>
 							<li>Ichthyosis - Carrier</li>
 						</ul>
 
